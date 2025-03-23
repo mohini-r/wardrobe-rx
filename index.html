@@ -1,0 +1,227 @@
+<!-- Save this as index.html inside your wardrobe-rx folder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wardrobe Rx</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+.hero {
+  background: url('images/hero-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: lowercase;
+  color: #f0ede1; /* bold orange like mindful closet */
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  font-family: monospace;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background: white;
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #eee;
+}
+
+    nav.nav {
+      background: #f7f7f7;
+      padding: 1rem 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .light {
+      background-color: #f9f9f9;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+    .image-card {
+      position: relative;
+      width: 280px;
+      height: 380px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .image-card:hover img {
+      transform: scale(1.05);
+    }
+    .text-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      color: #fff;
+      text-align: left;
+    }
+    .text-overlay h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .contact button {
+      background: #444;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+  <div class="hero-overlay">
+    <h1>Wardrobe Rx</h1>
+    <p>Your wardrobe, our prescription!</p>
+    <a href="#book" class="cta-button">Book Your Free Appointment</a>
+  </div>
+</header>
+
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Styling</a></li>
+      <li><a href="#shop">Accessories</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#book">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Wardrobe Rx</h2>
+    <p>We help busy, style-conscious families in Hyderabad make confident outfit choices for life’s special occasions.</p>
+  </section>
+
+  <section id="services" class="section light">
+    <h2>Occasion-Based Styling</h2>
+    <div class="grid">
+      <div class="image-card"><img src="images/wedding.jpg" alt="Wedding"><div class="text-overlay"><h3>Wedding Styling</h3></div></div>
+      <div class="image-card"><img src="images/prom.jpg" alt="Prom"><div class="text-overlay"><h3>Prom Night Looks</h3></div></div>
+      <div class="image-card"><img src="images/birthday.jpg" alt="Birthday"><div class="text-overlay"><h3>Birthday Outfits</h3></div></div>
+      <div class="image-card"><img src="images/bachelorette.jpg" alt="Bachelorette"><div class="text-overlay"><h3>Bachelorette Prep</h3></div></div>
+      <div class="image-card"><img src="images/babyshower.jpg" alt="Baby Shower"><div class="text-overlay"><h3>Baby Shower Looks</h3></div></div>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <h2>Shop Accessories by Style</h2>
+    <div class="grid">
+      <div class="image-card"><img src="images/traditional.jpg" alt="Traditional"><div class="text-overlay"><h3>Traditional</h3></div></div>
+      <div class="image-card"><img src="images/boho.jpg" alt="Boho"><div class="text-overlay"><h3>Boho</h3></div></div>
+      <div class="image-card"><img src="images/western.jpg" alt="Western"><div class="text-overlay"><h3>Western</h3></div></div>
+    </div>
+  </section>
+
+  <section id="how" class="section light">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Schedule your appointment</li>
+      <li>Share your wardrobe and event</li>
+      <li>Get styling suggestions + accessory tips</li>
+    </ol>
+  </section>
+
+  <section id="book" class="section contact">
+    <h2>Contact Us</h2>
+    <p>📍 123, ISB Road, GachiBowli, Hyderabad TG 500111</p>
+    <p>📞 +91 9498765432</p>
+    <p>📧 <a href="mailto:wardrobe_rx@genai.com">wardrobe_rx@genai.com</a></p>
+    <button onclick="alert('Booking feature coming soon!')">Book Now</button>
+  </section>
+
+  <!-- Instagram Embed -->
+  <section class="section">
+    <h2>Latest from Instagram</h2>
+    <div style="display: flex; justify-content: center;">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DHhLphgoGS_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px rgba(0,0,0,0.5),0 1px 10px rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:99%;">
+      </blockquote>
+    </div>
+  </section>
+  <script async src="//www.instagram.com/embed.js"></script>
+
+  <footer>
+    <p>© 2025 Wardrobe Rx | @_wardroberx_ on Instagram</p>
+  </footer>
+
+</body>
+</html>
